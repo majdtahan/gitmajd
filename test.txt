@@ -1,3 +1,0 @@
-This is a test Git file 
-This is a test 2.0 line
-This is a test 3.0 line
