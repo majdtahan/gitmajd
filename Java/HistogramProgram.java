@@ -1,10 +1,10 @@
-import java.util.List;
-import java.util.Random;
+
+ //use math.random
 
 public class HistogramProgram {
 
     public static void main(String[] Args){
-        Random rand = new Random();
+
 
         String score ="";
         String score1="";
@@ -19,7 +19,7 @@ public class HistogramProgram {
 
 
         for(int i=0;i<100;i++){
-            int n = rand.nextInt(10);
+            byte n = (byte)(Math.random()*10);
 
 
             if(n==0){
