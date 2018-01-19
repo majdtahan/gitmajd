@@ -1,50 +1,51 @@
 import java.util.Scanner;
-import java.util.Random;
+
 
 public class QuizProgram {
 
-
-
-
-
     public  static void main(String[] Args) {
-        Random rand = new Random();
         int score = 0;
 
-
         for (int z = 0; z < 10; z++) {
-            int n = rand.nextInt(100);
-            int m = rand.nextInt(n);
-            Boolean p = rand.nextBoolean();
+            int n = (int) (Math.random() * 100);
+            int m = (int) (Math.random() * n);
+            int rando = (int) (Math.round(Math.random()));
+            int a;
+
+            if (rando == 0) {
+                System.out.println("What is the correct answer to: " + n + "+" + m);
+                Scanner input = new Scanner(System.in);
+                a = input.nextInt();
+                if (a != (n + m)) {
+                    System.out.println("False! The correct answer is: "+ (n+m));
 
 
-            System.out.println("What is the correct answer to: " + n + "+" + m);
+                } else{
+                    System.out.println("Correct! ");
+                    score++;
+                }
 
-            Scanner input = new Scanner(System.in);
-
-            int a = input.nextInt();
-
-           // if (p = true) {
-            //
-
-//            }
-            if (a != (n + m)) {
-                System.out.println("False");
-
-
-            } else if (a == (n + m)) {
-                System.out.println("True");
-                score++;
-            } else {
-
-                System.out.println("Invalid answer");
             }
+            else if(rando==1){
 
-            //System.out.println(a);
+                System.out.println("What is the correct answer to: " + n + "-" + m);
+                Scanner input = new Scanner(System.in);
+                a = input.nextInt();
+                if (a==(n-m)){
+                        System.out.println("Correct! ");
+                        score++;
+                    }
 
+                 else{
+                        System.out.println("False! The correct answer is: "+(n-m));
+
+                    }
+                }
+            }
+        System.out.println("You scored " + ((score)*10) + "% on the quiz!");
+        }
 
         }
-        System.out.println("You scored " + ((score)*10) + "on the quiz!");
 
-    }
-}
+
+
