@@ -62,6 +62,7 @@ public class HistogramProgram {
 
 
         }
+        System.out.println("score 0: "+score);
         System.out.println("score 1: "+score1);
         System.out.println("score 2: "+score2);
         System.out.println("score 3: "+score3);
