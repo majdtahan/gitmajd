@@ -1,0 +1,46 @@
+import java.util.Random;
+
+public class ImageProgram {
+
+    public static void main(String[] args) {
+        Random rand = new Random();
+        rand.nextBoolean();
+        int x=10;
+        int y = 10;
+        int z =0;
+        boolean grid[][] = new boolean[x][y];
+
+
+        for (int row = 0; row < grid.length; row++) {
+
+            for (int col = 0; col < grid[row].length; col++) {
+                boolean n = rand.nextBoolean();
+
+                    if (n == true) {
+                        System.out.print("O");
+                        z++;
+                            if(z>=10){
+                                z=0;
+                                System.out.println();
+                                     }
+
+
+                                   }
+                    else {
+                        System.out.print(".");
+                        z++;
+                            if(z>=10){
+                                z=0;
+                                System.out.println();
+                                     }
+
+
+                         }
+                  }
+
+
+                  }
+                              System.out.println();
+
+    }
+}
