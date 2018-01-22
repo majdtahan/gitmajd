@@ -19,7 +19,7 @@ public class HistogramProgram {
 
 
         for(int i=0;i<100;i++){
-            byte n = (byte)(Math.random()*100);
+            byte n = (byte)(Math.random()*10);
 
 
             if(n==0){
